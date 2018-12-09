@@ -1,0 +1,47 @@
+group 'dt-project'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Diff Utils
+    compile group: 'com.googlecode.java-diff-utils', name: 'diffutils', version: '1.2.1'
+    compile group: 'org.bitbucket.cowwoc', name: 'diff-match-patch', version: '1.1'
+    //Tika Parser
+    compile group: 'org.apache.tika', name: 'tika-core', version: '1.15'
+    compile group: 'org.apache.tika', name: 'tika-parsers', version: '1.15'
+    //Spring
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.3.9.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.9.RELEASE'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.11.6.RELEASE'
+    //DB
+    compile group: 'javax.transaction', name: 'jta', version: '1.1'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.196'
+    //Spring security
+    compile group: 'org.springframework.security', name: 'spring-security-core', version: '4.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-web', version: '4.2.3.RELEASE'
+    compile group: 'org.springframework.security', name: 'spring-security-config', version: '4.2.3.RELEASE'
+    //Servlet + JSP + JSTL
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+    compile group: 'javax.servlet.jsp', name: 'javax.servlet.jsp-api', version: '2.3.1'
+    //PDFBox
+    compile group: 'org.apache.pdfbox', name: 'pdfbox', version: '1.8.10'
+    //Jackson
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0'
+    //Testing
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'com.jayway.restassured', name: 'spring-mock-mvc', version: '2.2.0'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.3.9.RELEASE'
+
+
+}
