@@ -59,8 +59,6 @@ public class AppConfig extends WebMvcConfigurerAdapter{
         return new JpaTransactionManager(emf);
     }
 
-
-
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
