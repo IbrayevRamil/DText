@@ -5,7 +5,6 @@ import java.util.List;
 /**
  * Longest Common Subsequence (LCS)
  */
-
 public class LcsAlgorithm {
 
     private LcsAlgorithm() {
@@ -46,7 +45,6 @@ public class LcsAlgorithm {
                 // Put current character in result
                 original.set(i - 1, "");
                 revised.set(j - 1, "");
-//                lcs.set(index - 1, original.get(i - 1));
                 // reduce values of i, j and index
                 i--;
                 j--;
